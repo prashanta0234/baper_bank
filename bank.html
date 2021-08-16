@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>bank_site</title>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-14">Welcome <span class="text-yellow-500">Our bank</span> site!!</h1>
+    </header>
+    <main>
+        <section class="mt-8">
+            <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto">
+                <div class="bg-yellow-300 py-8 text-center rounded text-white">
+                <h1 class="text-2xl"> Diposit</h1>
+                <h1 class="text-4xl">$<span id="diposit-balance">00</span></h1>
+                </div>
+                <div class="bg-green-300 py-8 text-center rounded text-white">
+                <h1 class="text-2xl"> Withdrow</h1>
+                <h1 class="text-4xl">$<span id="withdrow">00</span></h1>
+                </div>
+                <div class="bg-blue-400 py-8 text-center rounded text-white">
+                <h1 class="text-2xl"> Main baalance</h1>
+                <h1 class="text-4xl">$<span id="main-balance">4500</span></h1>
+                </div>
+                
+                
+
+            </div>
+        </section>
+        <section class="mt-8 w-3/4 mx-auto">
+            <div class="grid grid-cols-2 gap-4 ">
+                <div class="bg-red-300 rounded">
+                    <h1 class="text-white ml-6 text-2xl ">Deposit please!</h1>
+                    <div>
+                        <input type="text" class="mt-6 ml-6 border w-3/4 block px-2 rounded" id="diposit-input" placeholder="Enter your money $">
+                        <button class="ml-6 bg-blue-300 px-4 py-2 mb-6 mt-3 text-white rounded" id="diposit-button" >Diposit</button>
+                    </div>
+                </div>
+                <div class="bg-pink-200 rounded">
+                    <h1 class="text-white ml-6 text-2xl ">Withdrow please!</h1>
+                    <div>
+                        <input type="text" class="mt-6 ml-6 border w-3/4 block px-2 rounded" id="withdrow-input" placeholder="Enter your money $">
+                        <button class="ml-6 bg-blue-300 px-4 py-2 mb-6 mt-3 text-white rounded" id="withdrow-button" >Withdrow</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+    <script src="js/bank.js"></script>
+</body>
+</html>
